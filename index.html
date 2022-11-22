@@ -7,25 +7,51 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SFX</title>
+        <title>Two Panels</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 
         <!-- MOBILE WEB APP, ADD THIS TO <head>..</head> OF index.html -->
-       <link rel="icon" type="image/png" href="favicon.png" />
-       <link rel="apple-touch-icon" href="favicon.png">
-       <meta name="apple-mobile-web-app-title" content="SFX">
-       <meta name="apple-mobile-web-app-capable" content="yes">
-       <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="apple-touch-icon" href="favicon.png">
+        <meta name="apple-mobile-web-app-title" content="Two Panels">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         
-        <script src="" async defer></script>
+        <!-- JAVASCRIPT -->
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+
+        
+        
+        <!-- PANEL 1 -->
+        <div class="panel-1" id="panel-1">            
+            <h1>Wrestling schedule </h1>
+            <button onclick="show();">Panel 2</button>
+        </div>
+    
+        <!-- PANEL 2 -->
+        <div class="panel-2" id="panel-2">
+            <h1>Wrestling schedule </h1>
+            <ul>
+                <li>Monday after school 3:45-5:30</li>
+                <li>Tuesday: no practice</li>
+                <li>Wednesday: 3:45-5:30</li>
+                <li>Thursday: Morning conditioning 6:20-7:00</li>
+                <li>Friday: Match day 12:00- 3:45</li>
+                <li>Saturday: 10:00-12:30</li>
+                <li>Sunday: no practice</li>
+            </ul>
+            <button onclick="hide();">Panel 1</button>
+        </div>
+
     </body>
 </html>
-<center>Wrestling schedule</center>
-
